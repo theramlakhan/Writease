@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_note"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvSaveNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/rounded_background"
+        android:hint="@string/title" />
+
+    <EditText
+        android:id="@+id/etNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background"
+        android:hint="@string/content" />
+
+
+</LinearLayout>
