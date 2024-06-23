@@ -67,6 +67,7 @@ class DBHelper(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null,
         values.put(COL_TITLE, title)
         values.put(COL_CONTENT, content)
         db.update(TABLE_NAME, values, "id=?", arrayOf(id))
+        db.close()
 
     }
 }
